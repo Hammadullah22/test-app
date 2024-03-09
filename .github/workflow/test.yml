@@ -18,7 +18,8 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps @babel/plugin-proposal-private-property-in-object
+        
 
       - name: Build app
         run: npm run build
