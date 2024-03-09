@@ -53,3 +53,4 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWSS3BUVKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWSACCESSKEYID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETACCESSKEY }}
+          AWS_REGION: 'us-east-2' # Change this to your S3 bucket's region
