@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - main # Set the branch name to your default branch name
+      - main
 
 jobs:
   build:
@@ -24,3 +24,6 @@ jobs:
       with:
         name: build-artifacts
         path: build
+
+env:
+  CI: false
