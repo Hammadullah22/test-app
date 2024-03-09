@@ -46,7 +46,8 @@ jobs:
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@v0.1.0
         with:
-          args: --acl public-read
+          args: --acl public-read --region us-east-2
+
         env:
           SOURCE_DIR: build/
           AWS_S3_BUCKET: ${{ secrets.AWSS3BUVKET }}
